@@ -16,6 +16,10 @@ class Main {
         System.out.print("Enter the second number: ");
         int secondNumber = input.nextInt();
 
+        int sum = calculateSum(firstNumber, secondNumber);
+
+        System.out.println("Sum of the two numbers: " + sum);
+
     }
 
 }

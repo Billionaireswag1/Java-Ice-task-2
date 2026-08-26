@@ -6,6 +6,10 @@ class Main {
         return firstNumber + secondNumber;
     }
 
+    public static double calculateAverage(int firstNumber, int secondNumber) {
+        return (firstNumber + secondNumber) / 2.0;
+    }
+
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
@@ -17,8 +21,10 @@ class Main {
         int secondNumber = input.nextInt();
 
         int sum = calculateSum(firstNumber, secondNumber);
+        double average = calculateAverage(firstNumber, secondNumber);
 
         System.out.println("Sum of the two numbers: " + sum);
+        System.out.println("Average of the two numbers: " + average);
 
     }
 
